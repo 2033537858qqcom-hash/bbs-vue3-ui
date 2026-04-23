@@ -28,12 +28,12 @@
           </a-input>
         </a-form-item>
         <a-form-item>
-          <a-checkbox v-decorator="[ 'remember', { valuePropName: 'checked', initialValue: true, }, ]" v-model:checked="ruleForm.remember">
+          <a-checkbox v-model:checked="ruleForm.remember">
             {{ $t("common.rememberMe") }}
           </a-checkbox>
-          <A class="login-form-forgot" @click="mobileResetPassword">
+          <a class="login-form-forgot" @click="mobileResetPassword">
             {{ $t("common.forgotPassword") }}
-          </A>
+          </a>
           <a-button type="primary" html-type="submit" class="login-form-button" size="large">
             {{ $t("common.login") }}
           </a-button>

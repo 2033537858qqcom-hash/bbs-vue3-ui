@@ -9,12 +9,12 @@
             <template #title>
               <span class="username" slot="title">
                 <span style="padding-right: 2px;">{{ item.name }}</span>
-                <img :src="require('@/assets/img/level/' + item.level + '.svg')" alt="" @click.stop="routerBook"/>
+                <img :src="levelIcon(item.level)" alt="" @click.stop="routerBook"/>
               </span>
             </template>
             <template #avatar>
               <a-avatar slot="avatar"
-                      :src="item.picture ? item.picture : require('@/assets/img/default-avatar.png')"/>
+                      :src="item.picture ? item.picture : defaultAvatar"/>
             </template>
           </a-list-item-meta>
         </a-list-item>
@@ -34,6 +34,7 @@
 <script>
 import userService from "@/service/userService";
 import { RightOutlined } from '@ant-design/icons-vue';
+import defaultAvatar from "@/assets/img/default-avatar.png";
 
 export default {
   data() {
@@ -41,12 +42,16 @@ export default {
       data: [],
       params: {currentPage: 1, pageSize: 3},
       finish: false,
+      defaultAvatar,
     };
   },
   components: {
     RightOutlined,
   },
   methods: {
+    levelIcon(level) {
+      return new URL(`../../assets/img/level/${level}.svg`, import.meta.url).href;
+    },
     getHotAuthorsList(params) {
       userService.getHotAuthorsList(params)
           .then(res => {

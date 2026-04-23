@@ -14,59 +14,23 @@
       :bodyStyle="{ padding: '5px 24px' }"
       :visible="visible"
   >
-    <a-form :model="form" ref="form" :label-col="{ span: 7 }" :rules="rule" :wrapper-col="{ span: 17 }">
+    <a-form :model="form" ref="form" :label-col="{ span: 7 }" :rules="rules" :wrapper-col="{ span: 17 }">
       <a-form-item :label="labels.oldPassword" name="oldPassword">
         <a-input-password
             :placeholder="$t('common.oldPassword')"
             v-model:value="form.oldPassword"
-            v-decorator="[
-            'oldPassword',
-            {
-              rules: [
-                {
-                  required: true,
-                  message: $t('common.needOldPassword'),
-                },
-              ],
-              validateTrigger: ['blur'],
-            },
-          ]"
         ></a-input-password>
       </a-form-item>
       <a-form-item :label="labels.newPassword"  name="newPassword">
         <a-input-password
             :placeholder="$t('common.newPassword')"
             v-model:value="form.newPassword"
-            v-decorator="[
-            'newPassword',
-            {
-              rules: [
-                {
-                  required: true,
-                  message: $t('common.needNewPassword'),
-                },
-              ],
-              validateTrigger: ['blur'],
-            },
-          ]"
         ></a-input-password>
       </a-form-item>
       <a-form-item :label="labels.confirmPassword"  name="newPasswordAgain">
         <a-input-password
             :placeholder="$t('common.newPasswordAgain')"
             v-model:value="form.newPasswordAgain"
-            v-decorator="[
-            'newPasswordAgain',
-            {
-              rules: [
-                {
-                  required: true,
-                  message: $t('common.newPasswordAgain'),
-                },
-              ],
-              validateTrigger: ['blur'],
-            },
-          ]"
         ></a-input-password>
       </a-form-item>
     </a-form>

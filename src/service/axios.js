@@ -2,15 +2,18 @@ import axios from "axios";
 import store from "@/store/index";
 // 设置xhr请求超时时间和baseURL（毫秒）
 axios.defaults.timeout = 15000;
-if (process.env.NODE_ENV === "production") {
-  // axios.defaults.baseURL = "https://bbs.nansin.top";
-}
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || "/api";
 axios.defaults.withCredentials = true;  //允许axios请求携带cookie等凭证
 export default (() => {
 
   // 每次请求前处理
   axios.interceptors.request.use(
       function (config) {
+        const requestUrl = config.url || "";
+        if (requestUrl.startsWith("/api")) {
+          // 统一把请求写法 `/api/...` 转为 `/...`，避免和 baseURL 的 `/api` 重复
+          config.url = requestUrl.replace(/^(\/api)+(?=\/)/, "");
+        }
         return config;
       },
       function (error) {
@@ -39,7 +42,7 @@ export default (() => {
               return Promise.resolve(response.data);
 
               // 如果code是302，代表需要跳转到切页面
-            } else if (response.data.code === 302 && response.config.url !== '/api/bbs/user/getCurrentUserRights') {
+            } else if (response.data.code === 302 && !String(response.config.url || "").endsWith('/bbs/user/getCurrentUserRights')) {
               // window.location.href = response.data.data.target;
               store.state.isLogin = false;
               store.state.loginVisible = true;

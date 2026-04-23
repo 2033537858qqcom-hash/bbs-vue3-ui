@@ -51,8 +51,8 @@ const state = {
     systemNotifyCount: 0,
     // 任务提醒数量
     taskNotifyCount: 0,
-    // 南生运营域名
-    manageDomain: 'http://manage-test.nansin.top',
+    // 南生运营域名 (已改成本地)
+    manageDomain: 'http://127.0.0.1:8080',
     // 国际化方法
     translate: function (val) {
         // 国际化方法

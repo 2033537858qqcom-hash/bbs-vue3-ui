@@ -22,28 +22,28 @@
                 <div class="author-content">
                   <div class="title">作者</div>
                   <div class="sub">马亮南生（maliangnansheng）</div>
-                  <img title="微信" src="https://aid.nansin.top/default/wx-mlns.png" width="50%"/>
-                  <img title="QQ" src="https://aid.nansin.top/default/qq-mlns.jpg" width="50%"/>
+                  <img title="微信" src="#" width="50%"/>
+                  <img title="QQ" src="#" width="50%"/>
                 </div>
                 <div class="code-content">
                   <div class="title">源码地址</div>
                   <div class="sub">后端源码(GitHub)：<a target="_blank"
-                                                   href="https://github.com/maliangnansheng/bbs-springboot">bbs-springboot</a>
+                                                   href="#">bbs-springboot</a>
                   </div>
-                  <div class="sub">前端源码(GitHub)：<a target="_blank" href="https://github.com/maliangnansheng/bbs-vue-ui">bbs-vue-ui</a>
+                  <div class="sub">前端源码(GitHub)：<a target="_blank" href="#">bbs-vue-ui</a>
                   </div>
                   <div class="sub">后端源码(Gitee)：<a target="_blank"
-                                                  href="https://gitee.com/maliangnansheng/bbs-springboot">bbs-springboot</a>
+                                                  href="#">bbs-springboot</a>
                   </div>
-                  <div class="sub">前端源码(Gitee)：<a target="_blank" href="https://gitee.com/maliangnansheng/bbs-vue-ui">bbs-vue-ui</a>
+                  <div class="sub">前端源码(Gitee)：<a target="_blank" href="#">bbs-vue-ui</a>
                   </div>
                 </div>
                 <div class="code-content">
                   <div class="title">学习路线</div>
                   <div class="sub">
-                    <a target="_blank" href="https://bbs.nansin.top/detail/158">Java学习路线</a>
+                    <a target="_blank" href="/detail/158">Java学习路线</a>
                     <br>
-                    <a target="_blank" href="https://bbs.nansin.top/detail/159">前端学习路线</a>
+                    <a target="_blank" href="/detail/159">前端学习路线</a>
                   </div>
                 </div>
                 <div class="code-content">
@@ -51,38 +51,38 @@
                   <div class="sub">
                     设计文档(论文)：
                     <a target="_blank"
-                       href="https://76.nansin.top/doc/%E5%8D%97%E7%94%9F%E8%AE%BA%E5%9D%9B%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.doc">南生论坛设计文档</a>
+                       href="#">南生论坛设计文档</a>
                   </div>
                   <div class="sub">
                     日常迭代：
-                    <a target="_blank" href="https://bbs.nansin.top/detail/122">南生论坛日常迭代</a>
+                    <a target="_blank" href="/detail/122">南生论坛日常迭代</a>
                   </div>
                   <div class="sub" style="color: #cb2222">
                     【商用】需看：
-                    <a target="_blank" href="https://bbs.nansin.top/detail/171">南生运营的理念</a>
+                    <a target="_blank" href="/detail/171">南生运营的理念</a>
                   </div>
                   <div class="sub">
                     安装部署教程：
                     <br>
-                    <a target="_blank" href="https://bbs.nansin.top/detail/44">【后端】安装部署教程</a>
+                    <a target="_blank" href="/detail/44">【后端】安装部署教程</a>
                     <br>
-                    <a target="_blank" href="https://bbs.nansin.top/detail/45">【前端】安装部署教程</a>
+                    <a target="_blank" href="/detail/45">【前端】安装部署教程</a>
                   </div>
                   <div class="sub">
                     视频教程：
                     <br>
                     <a target="_blank"
-                       href="https://www.bilibili.com/video/BV1pK411C7T4/?spm_id_from=333.999.0.0&vd_source=d0a5d07985a7fbbfb889c874632343c6">南生论坛代码讲解视频</a>
+                       href="#">南生论坛代码讲解视频</a>
                     <br>
                     <a target="_blank"
-                       href="https://www.bilibili.com/video/BV1he4y1C7rk/?spm_id_from=333.999.0.0&vd_source=d0a5d07985a7fbbfb889c874632343c6">南生论坛使用指南视频</a>
+                       href="#">南生论坛使用指南视频</a>
                   </div>
                   <div class="sub">
                     南生闲聊：
                     <br>
-                    <a target="_blank" href="https://76.nansin.top/jar/chat/ns-chat.zip">南生闲聊项目源码</a>
+                    <a target="_blank" href="#">南生闲聊项目源码</a>
                     <br>
-                    <a target="_blank" href="https://bbs.nansin.top/detail/71">南生闲聊教程</a>
+                    <a target="_blank" href="/detail/71">南生闲聊教程</a>
                   </div>
                 </div>
               </div>

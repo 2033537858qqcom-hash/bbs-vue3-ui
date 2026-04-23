@@ -53,17 +53,17 @@ export default {
 
     // 点击底部按钮跳转到闲聊页面
     routerChat() {
-      window.open('https://chat.nansin.top', '_blank');
+      window.open('/chat', '_blank');
     },
 
     // 点击底部按钮跳转到源码页面
     routerGithub() {
-      window.open('https://github.com/maliangnansheng/bbs-springboot', '_blank');
+      window.open('#', '_blank');
     },
 
     // 点击底部按钮跳转到源码页面
     routerGitee() {
-      window.open('https://gitee.com/maliangnansheng/bbs-springboot', '_blank');
+      window.open('#', '_blank');
     }
   }
 };

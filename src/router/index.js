@@ -1,6 +1,6 @@
 // import Vue from "vue";
 // import VueRouter from "vue-router";
-import { createRouter, RouteRecordRaw, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 // 每次调用Vue.$router.push方法跳转路由的时候先判断是不是已经在目标路由，避免重复跳转（Vue会有警告）
 // const originalPush = VueRouter.prototype.push;

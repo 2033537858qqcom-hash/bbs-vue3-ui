@@ -22,23 +22,27 @@
         <template #overlay>
           <a-menu>
             <a-menu-item>
-              <a target="_blank" href="https://github.com/maliangnansheng/bbs-springboot">
+              <!--<a target="_blank" href="https://github.com/maliangnansheng/bbs-springboot">-->
+              <a target="_blank" href="#">
                 <i class="iconfont icon-GitHub" style="color: #000"></i><b style="color: #000"> {{ $t("common.backEnd") }}</b>{{ $t("common.sourceCode") }}
               </a>
             </a-menu-item>
             <a-menu-item>
-              <a target="_blank" href="https://github.com/maliangnansheng/bbs-vue-ui">
+              <!--<a target="_blank" href="https://github.com/maliangnansheng/bbs-vue-ui">-->
+              <a target="_blank" href="#">
                 <i class="iconfont icon-GitHub" style="color: #000"></i><b style="color: #000"> {{ $t("common.frontEnd") }}</b>{{ $t("common.sourceCode") }}
               </a>
             </a-menu-item>
             <a-divider style="margin: 3px 0 3px 0"/>
             <a-menu-item>
-              <a target="_blank" href="https://gitee.com/maliangnansheng/bbs-springboot">
+              <!--<a target="_blank" href="https://gitee.com/maliangnansheng/bbs-springboot">-->
+              <a target="_blank" href="#">
                 <i class="iconfont icon-gitee" style="color: #c71d23"></i><b style="color: #000"> {{ $t("common.backEnd") }}</b>{{ $t("common.sourceCode") }}
               </a>
             </a-menu-item>
             <a-menu-item>
-              <a target="_blank" href="https://gitee.com/maliangnansheng/bbs-vue-ui">
+              <!--<a target="_blank" href="https://gitee.com/maliangnansheng/bbs-vue-ui">-->
+              <a target="_blank" href="#">
                 <i class="iconfont icon-gitee" style="color: #c71d23"></i><b style="color: #000"> {{ $t("common.frontEnd") }}</b>{{ $t("common.sourceCode") }}
               </a>
             </a-menu-item>
@@ -188,38 +192,38 @@
     border:0!important;
   }
   // 去掉选中active加粗下划线
-  /deep/ .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+  :deep(.ant-menu-horizontal > .ant-menu-item-active), :deep(.ant-menu-horizontal > .ant-menu-item-open), :deep(.ant-menu-horizontal > .ant-menu-item-selected), :deep(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover), :deep(.ant-menu-horizontal > .ant-menu-submenu-active), :deep(.ant-menu-horizontal > .ant-menu-submenu-open), :deep(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected), :deep(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu) {
     // border-bottom: 2px solid transparent;
     border:0!important;
   }
   /* 调整a-menu-item的padding */
-  /deep/ .ant-menu-item, .ant-menu-submenu-title {
+  :deep(.ant-menu-item), :deep(.ant-menu-submenu-title) {
     padding: 0 16px;
   }
   /* -------- horizontal-end -------- */
 
   /* -------- inline-start -------- */
   // 去掉a-menu组件的下划线
-  /deep/ .ant-menu-inline {
+  :deep(.ant-menu-inline) {
     border-right: 0;
   }
   // 去掉选中active加粗下划线
-  /deep/ .ant-menu-inline .ant-menu-item::after, .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after {
+  :deep(.ant-menu-inline .ant-menu-item::after), :deep(.ant-menu-vertical .ant-menu-item::after), :deep(.ant-menu-vertical-left .ant-menu-item::after), :deep(.ant-menu-vertical-right .ant-menu-item::after) {
     border-right: 3px solid transparent;
   }
   // 去掉选中active背景色
-  /deep/ .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  :deep(.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected) {
     background-color: transparent;
   }
   /* -------- inline-end -------- */
-  /deep/ .ant-menu-horizontal > .ant-menu-item::after, .ant-menu-horizontal > .ant-menu-submenu::after{
+  :deep(.ant-menu-horizontal > .ant-menu-item::after), :deep(.ant-menu-horizontal > .ant-menu-submenu::after){
     // border-bottom: 2px solid transparent!important;
     border:0!important;
   }
-  /deep/ .ant-menu-item, .ant-menu-submenu-title{
+  :deep(.ant-menu-item), :deep(.ant-menu-submenu-title){
     transition: background 0.3s!important;
   }
-  /deep/ .ant-menu-item{
+  :deep(.ant-menu-item){
     border:0!important;
   }
 </style>

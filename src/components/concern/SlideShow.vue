@@ -60,7 +60,7 @@
 </script>
 
 <style scoped>
-  .ant-carousel >>> .custom-slick-arrow {
+  .ant-carousel :deep(.custom-slick-arrow) {
     width: 50px;
     height: 50px;
     font-size: 50px;
@@ -68,11 +68,11 @@
     opacity: 0.3;
   }
 
-  .ant-carousel >>> .custom-slick-arrow:before {
+  .ant-carousel :deep(.custom-slick-arrow:before) {
     display: none;
   }
 
-  .ant-carousel >>> .custom-slick-arrow:hover {
+  .ant-carousel :deep(.custom-slick-arrow:hover) {
     opacity: 0.5;
   }
 </style>

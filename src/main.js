@@ -41,6 +41,23 @@ import 'mavon-editor/dist/css/index.css'
 
 
 
+// 兼容历史模板中的 require('@/assets/**') 写法，避免 Vite 下 require 未定义导致白屏
+const assetModules = import.meta.glob('./assets/**/*.{png,jpg,jpeg,gif,webp,svg}', { eager: true, import: 'default' });
+const assetPathMap = {};
+Object.entries(assetModules).forEach(([key, value]) => {
+  const srcPath = key.replace(/^\./, '/src');
+  assetPathMap[srcPath] = value;
+  assetPathMap[srcPath.replace(/^\/src/, '@/')] = value;
+});
+function legacyRequire(requestPath) {
+  if (typeof requestPath === "string" && assetPathMap[requestPath]) {
+    return assetPathMap[requestPath];
+  }
+  throw new Error(`Unsupported legacy require path: ${requestPath}`);
+}
+window.require = legacyRequire;
+globalThis.require = legacyRequire;
+
 const app = createApp(App);
 app.config.globalProperties.$utils = utils;
 app.config.globalProperties.$moment = moment;

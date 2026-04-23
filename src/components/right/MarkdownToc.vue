@@ -67,9 +67,9 @@
     padding: 15px 10px 0 15px;
   }
 
-  // 深度选择器 >>>
+  // 深度选择器 :deep()
   #markdown-toc {
-    /deep/ * {
+    :deep(*) {
       .catalog-list {
         font-weight: 600;
         position: relative;
